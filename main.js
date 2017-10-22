@@ -6,6 +6,7 @@ function clearResults(){
 }
 
 bttn.addEventListener("click", function(){
+  event.preventDefault();
   console.log('click');
   let search = document.getElementById('mySearch').value;
   let url = "http://crossorigin.me/http://www.recipepuppy.com/api/?q=" + search;
